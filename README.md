@@ -3,9 +3,10 @@
 * Design Principals
 * [Remote Control Outlets](/docs/remotes.md)
 * [USB Relays](/docs/usb_relay.md)
-* [Home Server]
-* [Web Server]
-* [Web Client]
+* [Home Server](/docs/server.md)
+* [Assembly](/docs/assembly.md)
+* [Web Server](/docs/web_server.md)
+* [Web Client](/docs/web_client.md)
 * [iOS Client]
 * [Timed Events]
 * [Tie Fighter Client]
