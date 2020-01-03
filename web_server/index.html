@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  function scanForResources(button_id){
+    if(button_id == "1 ON"){
+        hw_id = "6QMBS_5"
+    } else if(button_id == "1 OFF"){
+        hw_id = "6QMBS_6"
+    } else if(button_id == "2 OFF"){
+        hw_id = "6QMBS_7"
+    }else if(button_id == "2 ON"){
+        hw_id = "6QMBS_8"
+    }else if(button_id == "3 OFF"){
+        hw_id = "6QMBS_3"
+    }else if(button_id == "3 ON"){
+        hw_id = "6QMBS_4"
+    }
+    data = JSON.stringify({id: hw_id})
+    $.ajax({
+      type: 'POST',
+      url: 'https://dc8pl6l9557au.cloudfront.net/v1/intermittent_on',
+      data: data,
+      crossDomain: true,
+      dataType: 'json',
+      success: function(data, status){
+      },
+      error: function(xhr,status,error){
+        console.log(error)
+      }
+    });
+  }
+</script>
+
+<center>
+<table>
+  <tr>
+    <td><button onClick="scanForResources('1 ON')">1 ON</button></td>
+    <td><button onClick="scanForResources('1 OFF')">1 OFF</button></td>
+  </tr>
+  <tr>
+    <td><button onClick="scanForResources('2 ON')">2 ON</button></td>
+    <td><button onClick="scanForResources('2 OFF')">2 OFF</button></td>
+  </tr>
+  <tr>
+    <td><button onClick="scanForResources('3 ON')">3 ON</button></td>
+    <td><button onClick="scanForResources('3 OFF')">3 OFF</button></td>
+  </tr>
+</table>
+
