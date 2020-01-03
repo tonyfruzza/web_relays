@@ -1,0 +1,2 @@
+cleanImages:
+	mogrify *.png
