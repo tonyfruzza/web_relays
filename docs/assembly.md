@@ -1,11 +1,7 @@
 # Home Power Automation on the Cheap
 ### Assembly
 
-Remote disassembled and wired up to the relay board
-
-![Remote](/docs/images/controller.png)
-
-Leads soldered to each side of the intermittent switch buttons to connect to each of the relays
+Remote disassembled and wired up to the relay board. Leads soldered to each side of the intermittent switch buttons to connect to each of the relays
 
 ![Assembled](/docs/images/assembled.png)
 
