@@ -9,4 +9,4 @@
 * [Timed Events]
 * [Tie Fighter Client]
 
-[Next](usb_relay.md)
+[Next](/docs/usb_relay.md)
