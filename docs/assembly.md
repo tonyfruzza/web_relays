@@ -9,4 +9,4 @@ The relays do have 3 legs each, so it's possible to use a single relay for both 
 
 The power supply used was something laying around from a previously dead WiFi router that just happened to be the corrected 12 volt size. 12 volts is also what is needed to run the remote, we no longer need to worry about a battery!
 
-[NEXT](/docs/assembly.md)
+[NEXT](/docs/web_client.md)

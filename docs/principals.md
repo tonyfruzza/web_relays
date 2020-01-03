@@ -5,6 +5,7 @@ Feature list requested
 * Make use of hardware that is already owned
 * Additional hardware should be inexpensive
 * Has to be simple to use, not all at home are B Bots (no cli)
+* Needs timers
 
 Available off the shelf options:
 

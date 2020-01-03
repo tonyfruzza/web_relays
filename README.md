@@ -10,5 +10,3 @@
 * [iOS Client](/docs/ios_client.md)
 * [Timed Events](/docs/timers.md)
 * [X-Wing Fighter Client](/docs/xwing.md)
-
-[NEXT](/docs/principals.md)
