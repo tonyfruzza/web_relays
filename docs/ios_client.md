@@ -1,7 +1,7 @@
 # Home Power Automation on the Cheap
 ### iOS Client
 
-In our house iOS is where the apps run natively. Using [Apple Swift](https://developer.apple.com/swift/) a light weight UI was created providing buttons to the API. It's not far off from a generic [Hello World! app](https://www.appcoda.com/learnswift/build-your-first-app.html) with the addition of [how to make an HTTP POST request](https://www.tutorialspoint.com/how-to-make-an-http-post-request-on-ios-app-using-swift).
+In our house, iOS is where the apps run natively. Using [Apple Swift](https://developer.apple.com/swift/) a light weight UI was created providing buttons to the API. It's not far off from a generic [Hello World! app](https://www.appcoda.com/learnswift/build-your-first-app.html) with the addition of [how to make an HTTP POST request](https://www.tutorialspoint.com/how-to-make-an-http-post-request-on-ios-app-using-swift).
 
 ![iOSPower](/docs/images/app.png)
 
