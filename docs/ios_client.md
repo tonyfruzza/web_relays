@@ -5,7 +5,7 @@ In our house iOS is where the apps run natively. Using [Apple Swift](https://dev
 
 ![iOSPower](/docs/images/app.png)
 
-There's a couple hurdles introduced. The Sinatra server is plain text HTTP server and iOS is not happy. There are [work arounds](https://stackoverflow.com/questions/32941239/unable-to-access-https-web-service-from-ios) but it was easier to create a CloudFront CDN with the home server as the origin. You can make use of the generic CloudFront SSL cert or your own.
+An iOS app introduced a couple of new hurdles with the already working API. Sinatra serves plain text HTTP and Apple's default policies do not allow this. There are [work arounds](https://stackoverflow.com/questions/32941239/unable-to-access-https-web-service-from-ios) but it is best security practices to encrypt this traffic and a CloudFront CDN makes it easy to do so with the home server as the origin. [Only allowing traffic from CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html) will ensure all calls originated through SSL.
 
 The second issue is that [CloudFront strips off GET parameters](https://forums.aws.amazon.com/thread.jspa?threadID=26478), so the args had to be sent and received over POST methods instead.
 
