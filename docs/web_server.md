@@ -5,22 +5,13 @@ The web server is what bridges the hardware to the internet. All that is needed 
 ```ruby
 require 'rack/contrib'
 
-def get_state
-  `usbrelay`.each_line.map{|l| {id: l.split('=').first.strip, state: l.split('=').last.strip}}
-end
-
 post '/v1/intermittent_on' do
   request.body.rewind
   puts params
-  puts data = JSON.parse(params.first.first)
-  return JSON.generate({error: 'no id set'}) unless data.key?('id')
-  return JSON.generate({error: 'unknown id'}) unless get_state.map{|s| s[:id]}.include? data['id']
-  cmd = "usbrelay #{data['id']}=1"
-  puts "Executing: #{cmd}"
-  `#{cmd}`
+  puts data = JSON.parse(params.first)
+  `usbrelay #{data['id']}=1`
   sleep 0.5
   `usbrelay #{data['id']}=0`
-  JSON.generate(get_state)
 end
 ```
 
