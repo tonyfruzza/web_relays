@@ -1,7 +1,8 @@
 # Home Power Automation on the Cheap
 ### Index
 * Design Principals
-* [USB Relays]()
+* [Remote Control Outlets](/docs/remotes.md)
+* [USB Relays](/docs/usb_relay.md)
 * [Home Server]
 * [Web Server]
 * [Web Client]
@@ -9,4 +10,4 @@
 * [Timed Events]
 * [Tie Fighter Client]
 
-[Next](/docs/usb_relay.md)
+[NEXT](/docs/remotes.md)
