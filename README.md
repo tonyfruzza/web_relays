@@ -7,8 +7,8 @@
 * [Assembly](/docs/assembly.md)
 * [Web Server](/docs/web_server.md)
 * [Web Client](/docs/web_client.md)
-* [iOS Client]
-* [Timed Events]
-* [Tie Fighter Client]
+* [iOS Client](/docs/ios_client.md)
+* [Timed Events](/docs/timers.md)
+* [X-Wing Fighter Client](/docs/xwing.md)
 
 [NEXT](/docs/principals.md)
